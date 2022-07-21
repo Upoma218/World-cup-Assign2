@@ -53,14 +53,14 @@ h1{
 }
 
 .button{
-    background-color: rgb(150, 177, 1);
-    border: none;
+    background-color: rgb(1, 41, 1);
+    border: 2px solid  rgb(150, 177, 1);
+    color:  rgb(150, 177, 1);
     border-radius: 5px;
     width: 252px;
     height: 64px;
     font-weight: 400;
     font-size: 20px;
-    color: #FFFFFF;
     transition: 1ms;
 }
 .fa-angle-right{
@@ -68,12 +68,13 @@ h1{
     align-items: center;
 }
 .button:hover {
-    background-color: rgb(1, 41, 1);
-    border: 2px solid  rgb(150, 177, 1);
-    color:  rgb(150, 177, 1);
+    background-color: rgb(150, 177, 1);
+    color: #FFFFFF;
+    border: none;
+    padding-left: 20px;
     cursor: pointer;
     transition: 1ms;
-    padding-left: 20px;
+   
 }
 /* ------banner image style------- */
 
@@ -129,6 +130,7 @@ h1{
     padding-right: 30px;
     margin-right: 20px;
 }
+
 /* ------------
 container style
 ------------- */
@@ -295,6 +297,9 @@ li{
         padding: 10%;
         margin-left: 50px;
        }
+       .button{
+        background-color: white;
+       }
        .container{
         width: 100%;
         margin-left: 5%;
@@ -358,6 +363,9 @@ li{
               margin-bottom: -150px;
               margin-left: -25px;
           }
+          .button{
+            background-color: white;
+           }
           .container{
               width: 100%;
               display: grid;
