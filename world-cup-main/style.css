@@ -8,6 +8,7 @@ Fonts
 body{
     font-family: poppins;
     background-color:  #FFFFFF;
+    margin-left: 10%;
 }
 /*------------ 
 Header styles
@@ -15,14 +16,13 @@ Header styles
 .header{
     display: flex;
     background-color: rgb(1, 41, 1);
-    width: 1321px;
-    height: 646px;
+    width: 90%;
     margin-top: 50px;
     border-radius: 30px;
 }
 .focal-point{
     width: 50%;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-left: 100px;
     padding-right: 20px;
 }
@@ -37,8 +37,8 @@ h1{
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -47,14 +47,14 @@ h1{
 .button1{
     align-items: center;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 
-.watch-live{
+.button{
     background-color: rgb(150, 177, 1);
     border: none;
     border-radius: 5px;
-    width: 187px;
+    width: 190px;
     height: 56px;
     font-weight: 400;
     font-size: 20px;
@@ -65,19 +65,17 @@ h1{
     padding: 10px;
     align-items: center;
 }
-.watch-live:hover {
+.button:hover {
     background-color: rgb(1, 41, 1);
     border: 2px solid  rgb(150, 177, 1);
     color:  rgb(150, 177, 1);
     cursor: pointer;
     transition: 1ms;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 /* ------banner image style------- */
 
 .Banner-Image{
-    width: 583px;
-    height: 613px;
     margin-top: 83px;
   }
 /* ----Animation------ */
@@ -87,7 +85,7 @@ h1{
     border-radius: 50%;
     background-color: rgb(252, 17, 0);
     position: relative;
-    animation: sliding 1s ease-in-out 10ms infinite alternate ;
+    animation: sliding 3s ease-in-out 10ms infinite alternate ;
     animation-play-state: running;
 }
 @keyframes sliding {
@@ -100,7 +98,7 @@ h1{
     50%{
         top: 0;
         background-color: rgb(5, 255, 17);
-        transform: scale(2);
+        transform: scale(1);
         
     }
     
@@ -109,4 +107,75 @@ h1{
         top: 550px;
         background-color: rgb(238, 255, 0);
     }
+}
+
+/* <!-- Match details section styles start from here --> */
+.match-details{
+    display: flex;
+    margin-top: 60px;
+}
+.menu{
+    display: grid;
+    grid-gap: 20px;
+    background-color: rgb(1, 41, 1);
+    height: 215px;
+    border-radius: 10px;
+    padding: 30px ;
+    margin-right: 40px;
+}
+/* ------------
+container style
+------------- */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.match-info{
+    border: 1px solid rgb(219, 215, 215);
+    width: 360px;
+    height: 400px;
+    border-radius: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.btn{
+    width: 100px;
+    height: 32px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+h3{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.mini-info{
+    font-weight: 400;
+    font-size: 16px; 
+    display: flex; 
+    margin-top: -20px;
+}
+.time{
+   display: flex;
+   align-items: center;
+   margin-right: 30px;
+}
+.fa-clock{
+    margin-right: 10px;
+}
+.messaege{
+    display: flex;
+    align-items: center;
+}
+.fa-comment-dots{
+    margin-right: 10px;
 }
